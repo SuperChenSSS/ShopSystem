@@ -219,12 +219,11 @@ def menu(flag=False):
 
 if __name__ == "__main__":
 	try:
-		conn = pymysql.connect(host="47.107.43.27",user="root",password="rootpasswd",db="LEARNSQL",port=3306,charset="UTF8")
+		conn = pymysql.connect(host="你的host",user="用户名",password="密码",db="LEARNSQL",charset="UTF8")
 	except:
 		print("连接出现问题，请检查服务器设置！")
 		exit(0)
 	print("已经成功远程连接到服务器数据库！")
-	print("IP=47.107.43.27")
 	#Add_User()
 	try:	
 		Create_Table_User()
